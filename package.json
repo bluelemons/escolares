@@ -1,0 +1,24 @@
+{
+  "name": "escolares",
+  "version": "1.0.0",
+  "description": "Nada interesante por acá ahora.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelemons/escolares.git"
+  },
+  "author": "",
+  "license": "AGPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/bluelemons/escolares/issues"
+  },
+  "homepage": "https://github.com/bluelemons/escolares#readme",
+  "dependencies": {
+    "browserify": "^11.0.1",
+    "ecstatic": "^0.8.0",
+    "leaflet": "^0.7.5"
+  }
+}
