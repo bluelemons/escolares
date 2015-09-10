@@ -33,8 +33,18 @@ function onLocationFound(e) {
     .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
   L.circle(e.latlng, radius).addTo(map);
+  sendPost(e);
 }
 
 function onLocationError(e) {
   map.setView([-31.6333, -60.7], 12);
+}
+
+function sendPost(e){
+  var position = new XMLHttpRequest();
+  var formData = new FormData();
+  formData.append('Lat', e.latlng.lat);
+  formData.append('Lng', e.latlng.lng);
+  position.open('post', 'https://escolares.herokuapp.com/');
+  position.send(formData);
 }
