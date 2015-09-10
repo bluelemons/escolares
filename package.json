@@ -4,6 +4,7 @@
   "description": "Nada interesante por acá ahora.",
   "main": "index.js",
   "scripts": {
+    "deploy": "browserify app.js > public/bundle.js && cp -Rf node_modules/leaflet/dist public/leaflet && divshot deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,8 @@
     "browserify": "^11.0.1",
     "ecstatic": "^0.8.0",
     "leaflet": "^0.7.5"
+  },
+  "devDependencies": {
+    "divshot-cli": "^1.10.5"
   }
 }

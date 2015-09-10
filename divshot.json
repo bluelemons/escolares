@@ -1,0 +1,7 @@
+{
+  "name": "escolares",
+  "root": "./public",
+  "routes": {
+    "**": "index.html"
+  }
+}

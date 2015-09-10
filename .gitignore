@@ -1,2 +1,5 @@
 node_modules/*
 *.log
+.divshot-cache/
+public/bundle.js
+public/leaflet/
